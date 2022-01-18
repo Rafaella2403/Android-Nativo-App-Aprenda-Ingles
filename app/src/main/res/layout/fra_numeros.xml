@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/segundo_fundo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="32dp"
+        android:gravity="center">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <ImageButton
+            android:id="@+id/fra_numeros_tv_um"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/um"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/fra_numeros_tv_dois"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/dois"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/fra_numeros_tv_tres"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/tres"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fra_numeros_tv_um" />
+
+        <ImageButton
+            android:id="@+id/fra_numeros_tv_quatro"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/quatro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/fra_numeros_tv_dois" />
+
+        <ImageButton
+            android:id="@+id/fra_numeros_tv_cinco"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/cinco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fra_numeros_tv_tres"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/fra_numeros_tv_seis"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/seis"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/fra_numeros_tv_quatro"
+            app:layout_constraintVertical_bias="0.269" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
